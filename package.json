@@ -1,0 +1,34 @@
+{
+  "name": "team-profile",
+  "version": "1.0.0",
+  "description": "make a team's members in an organized interactable list in html",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "jest"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gstockha/team-profile-generator.git"
+  },
+  "keywords": [
+    "team",
+    "generator",
+    "node",
+    "inquirer"
+  ],
+  "author": "gstockha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gstockha/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/gstockha/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.3.1",
+    "node.js": "^0.0.1-security"
+  }
+}
