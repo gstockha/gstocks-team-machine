@@ -4,21 +4,21 @@ function generateMembers(memberList){
         ${memberList.filter(({officeNumber}) => officeNumber !== undefined) //managers
             .map((obj) =>{
                 return `
-                <h3>${obj.getName()} ${obj.getID()} ${obj.getEmail()} ${obj.getOfficeNumber()}</h3>
+                <h3>${obj.getName()} ${obj.getRole()} ${obj.getID()} ${obj.getEmail()} ${obj.getOfficeNumber()}</h3>
                 `;
             })
         .join('')}
         ${memberList.filter(({github}) => github !== undefined) //engineers
             .map((obj) =>{
                 return `
-                <h3>${obj.getName()} ${obj.getID()} ${obj.getEmail()} ${obj.getGitHub()}</h3>
+                <h3>${obj.getName()} ${obj.getRole()} ${obj.getID()} ${obj.getEmail()} ${obj.getGitHub()}</h3>
                 `;
             })
         .join('')}
         ${memberList.filter(({school}) => school !== undefined) //interns
             .map((obj) =>{
                 return `
-                <h3>${obj.getName()} ${obj.getID()} ${obj.getEmail()} ${obj.getSchool()}</h3>
+                <h3>${obj.getName()} ${obj.getRole()} ${obj.getID()} ${obj.getEmail()} ${obj.getSchool()}</h3>
                 `;
             })
         .join('')}
