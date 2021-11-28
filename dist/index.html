@@ -1,27 +1,102 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Team Profile Generator</title>
-        <link rel="stylesheet" href="../src/style.css">
-      </head>
-      <body>
-        
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team Profile Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(253, 253, 253);
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        .header {
+            background-color: rgb(142, 251, 233);
+            border: solid rgba(0, 0, 0, 0.267);
+            text-align: center;
+            font-size: 30px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card {
+            background-color:rgb(255, 251, 251);
+            margin-top: 4%;
+            border: solid rgba(0, 0, 0, 0.472);
+            font-size: x-large;
+            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.185);
+            border-radius: 10px;
+            min-width: 500px;
+        }
+        #employees {
+           display: flex;
+           justify-content: space-evenly;
+           flex-direction: row;
+           flex: wrap;
+        }
+        .card-header{
+            margin: 10%;
+            text-align: center;
+        }
+        .card-body{
+            margin: 10%;
+        }
+        .card ul{
+            list-style: none;
+            font-size: 24px;
+        }
+        a{
+            color: black;
+        }
+    </style>
+    </head>
+    <body>
+    <div class=header>
+        <h1>My Team</h1>
+    </div>
+    <div class="container">
+    
     <section id="employees">
-        
-                <h3>Poopy Manager 1 idiot@dumb.org 82</h3>
+        <div class="card">
+                <div class="card-header">
+                <h2>Paul</h2> <h3>Manager</h3></div> 
+                <div class="card-body">
+                <ul>
+                    <li>ID: 1</li> 
+                    <li><a href="mailto:paulo@ku.edu">paulo@ku.edu</a></li>
+                    <li>Office Number: 29</li>
+                </ul>
+                </div>
+                </div>
                 
-        
-                <h3>Loser Engineer 42 loser@poop.com https://github.com/loser?tab=repositories</h3>
+        <div class="card">
+                <div class="card-header">
+                <h2>Steven</h2> <h3>Engineer</h3></div>
+                <div class="card-body">
+                <ul>
+                    <li>ID: 84</li> 
+                    <li><a href="mailto:stevn@sunny.com">stevn@sunny.com</a></li>
+                    <li>Github: <a href=https://github.com/steviepeevie?tab=repositories target="_blank">GitHub</a></li>
+                </ul>
+                </div>
+                </div>
                 
-        
-                <h3>Beta Intern 634 betaboy@gmoil.com KU</h3>
+        <div class="card">
+                <div class="card-header">
+                <h2>Loogie</h2> <h3>Intern</h3></div>
+                <div class="card-body">
+                <ul>
+                    <li>ID: 410</li> 
+                    <li><a href="mailto:loogieee@eepy.com">loogieee@eepy.com</a></li>
+                    <li>School: KU</li>
+                </ul>
+                </div>
+                </div>
                 
     </section>
   
-      </body>
+    </div>
+    </body>
     </html>
-    
