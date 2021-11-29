@@ -26,7 +26,7 @@ function generateMembers(memberList){
                 <ul>
                     <li>ID: ${obj.getID()}</li> 
                     <li><a href="mailto:${obj.getEmail()}">${obj.getEmail()}</a></li>
-                    <li>Github: <a href=${obj.getGitHub()} target="_blank">GitHub</a></li>
+                    <li><a href=${obj.getGitHub()} target="_blank">GitHub</a></li>
                 </ul>
                 </div>
                 </div>
